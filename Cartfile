@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire" >= 1.2
+github "SwiftyJSON/SwiftyJSON" "xcode6.3"
+github "onevcat/Kingfisher" >= 1.0
