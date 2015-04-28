@@ -9,6 +9,7 @@
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl)
 * [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+* [MMMarkdown](https://github.com/mdiep/MMMarkdown)
 
 
 ## How to build
@@ -24,7 +25,11 @@ Because the app uses carthage, we need to install carthage. To install the carth
 
 ##Progress
 
-Basic model and first view controller complete. Keep updating
+Content ViewController complete. Need more optimization.
+ 
+Learnt more about Self-sizing cell.
+
+User and Node ViewController are in progress
 
 
 
