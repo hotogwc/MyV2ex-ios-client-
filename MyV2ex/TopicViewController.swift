@@ -18,6 +18,7 @@ class TopicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
  
   @IBOutlet weak var segControl: HMSegmentedControl!
   @IBOutlet weak var topicTableView: UITableView!
+  var refresh: UIRefreshControl!
   
   enum status {
     case Hot
@@ -38,14 +39,27 @@ class TopicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     segControl.verticalDividerEnabled = true
     segControl.verticalDividerColor = UIColor.blackColor()
     navigationController?.navigationItem.titleView = segControl
+    refresh = UIRefreshControl()
+    refresh.addTarget(self, action: Selector("refreshData"), forControlEvents: .ValueChanged)
+    refresh.attributedTitle = NSAttributedString(string: "拉我刷新")
+    topicTableView.addSubview(refresh)
     
-    //register Topic cell
+        //register Topic cell
     let cellNib = UINib(nibName: "TopicCell", bundle: nil)
     topicTableView.registerNib(cellNib, forCellReuseIdentifier: "TopicCell")
+    topicTableView.registerNib(cellNib, forHeaderFooterViewReuseIdentifier: "111")
+
     fetchData()
     topicTableView.tableFooterView = UIView()
+    topicTableView.separatorColor = UIColor.clearColor()
+    topicTableView.rowHeight = UITableViewAutomaticDimension
+    topicTableView.estimatedRowHeight = 88.0
     
     // Do any additional setup after loading the view, typically from a nib.
+  }
+  
+  func refreshData() {
+    fetchData()
   }
   
   func fetchData() {
@@ -59,6 +73,7 @@ class TopicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
      
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
           self.topicTableView.reloadData()
+          self.refresh.endRefreshing()
         })
 
         
@@ -84,6 +99,12 @@ class TopicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
   }
   
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    performSegueWithIdentifier("ShowContent", sender: indexPath)
+    topicTableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+  
+  
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = topicTableView.dequeueReusableCellWithIdentifier("TopicCell") as! TopicCell
     
@@ -102,7 +123,22 @@ class TopicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
 
 
+
     return cell
+  }
+  
+  func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    let cell = topicTableView.dequeueReusableCellWithIdentifier("TopicCell") as! TopicCell
+    return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height + 1
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "ShowContent" {
+      let NavVc = segue.destinationViewController as! UINavigationController
+      let vc = NavVc.childViewControllers[0] as! TopicContentViewController
+      let indexpath = sender as! NSIndexPath
+      vc.data = dataSource[indexpath.row]
+    }
   }
 
 

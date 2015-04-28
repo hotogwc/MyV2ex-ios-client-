@@ -12,7 +12,7 @@ import QuartzCore
 class TopicCell: UITableViewCell {
   @IBOutlet weak var avatarView: UIImageView!
   @IBOutlet weak var topicTitle: UILabel!
-  @IBOutlet weak var nodeName: UILabel!
+  @IBOutlet weak var nodeName: UILabel!			
   @IBOutlet weak var autherName: UILabel!
   @IBOutlet weak var replyNum: UILabel!
 

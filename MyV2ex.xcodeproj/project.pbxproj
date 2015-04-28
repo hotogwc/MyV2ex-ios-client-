@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724EAA231AEA3FB900961476 /* libMMMarkdown-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724EAA1E1AEA3FB100961476 /* libMMMarkdown-iOS.a */; };
+		726145811AEA3B4800D693E3 /* ReplyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726145801AEA3B4800D693E3 /* ReplyCell.xib */; };
+		726145831AEA3B5B00D693E3 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726145821AEA3B5B00D693E3 /* ReplyCell.swift */; };
 		7284E03A1ADBE4C30005F140 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7284E0391ADBE4C30005F140 /* SwiftyJSON.framework */; };
 		7284E03B1ADBE4D00005F140 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7284E0391ADBE4C30005F140 /* SwiftyJSON.framework */; };
 		7284E03C1ADBE4D00005F140 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7284E0391ADBE4C30005F140 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -23,11 +26,44 @@
 		72C627741ADB90860032A9FC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C627731ADB90860032A9FC /* TopicCell.swift */; };
 		72C627761ADB91FF0032A9FC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C627751ADB91FF0032A9FC /* APIClient.swift */; };
 		72C6277D1ADBA4E80032A9FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72FE69871ADAC0BB0083FADE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72D20F0C1AE79A3F009E2060 /* TopicContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D20F0B1AE79A3F009E2060 /* TopicContentViewController.swift */; };
+		72D5DC4D1AEF6B4B00F141BC /* TopicBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D5DC4C1AEF6B4B00F141BC /* TopicBodyCell.xib */; };
+		72D5DC4F1AEF6B9100F141BC /* TopicBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5DC4E1AEF6B9100F141BC /* TopicBodyCell.swift */; };
+		72D5DC541AEF77DB00F141BC /* TopicTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5DC531AEF77DB00F141BC /* TopicTitleCell.swift */; };
+		72D5DC561AEF77EB00F141BC /* TopicTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D5DC551AEF77EB00F141BC /* TopicTitleCell.xib */; };
 		72FE69881ADAC0BB0083FADE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FE69871ADAC0BB0083FADE /* Alamofire.framework */; };
 		72FE698C1ADAC9410083FADE /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE698B1ADAC9410083FADE /* HMSegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		724EAA1B1AEA3FB100961476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE813DD614F893EB00EC9469;
+			remoteInfo = "MMMarkdown-Mac";
+		};
+		724EAA1D1AEA3FB100961476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE813E0E14F8961D00EC9469;
+			remoteInfo = "MMMarkdown-iOS";
+		};
+		724EAA1F1AEA3FB100961476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE813DEA14F893EB00EC9469;
+			remoteInfo = MMMarkdownTests;
+		};
+		724EAA211AEA3FB100961476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE813E1314F92B6100EC9469;
+			remoteInfo = mmmarkdown;
+		};
 		72B104771ADABDF9008ACEEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72B104591ADABDF9008ACEEC /* Project object */;
@@ -54,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMMarkdown.xcodeproj; path = "../../Downloads/MMMarkdown-master/MMMarkdown.xcodeproj"; sourceTree = "<group>"; };
+		726145801AEA3B4800D693E3 /* ReplyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplyCell.xib; sourceTree = "<group>"; };
+		726145821AEA3B5B00D693E3 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		7284E0391ADBE4C30005F140 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		7284E03D1ADC28510005F140 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		72B104611ADABDF9008ACEEC /* MyV2ex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyV2ex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +108,11 @@
 		72C627711ADB8E5D0032A9FC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		72C627731ADB90860032A9FC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		72C627751ADB91FF0032A9FC /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		72D20F0B1AE79A3F009E2060 /* TopicContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicContentViewController.swift; sourceTree = "<group>"; };
+		72D5DC4C1AEF6B4B00F141BC /* TopicBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicBodyCell.xib; sourceTree = "<group>"; };
+		72D5DC4E1AEF6B9100F141BC /* TopicBodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicBodyCell.swift; sourceTree = "<group>"; };
+		72D5DC531AEF77DB00F141BC /* TopicTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTitleCell.swift; sourceTree = "<group>"; };
+		72D5DC551AEF77EB00F141BC /* TopicTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicTitleCell.xib; sourceTree = "<group>"; };
 		72FE69871ADAC0BB0083FADE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		72FE69891ADAC9400083FADE /* MyV2ex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyV2ex-Bridging-Header.h"; sourceTree = "<group>"; };
 		72FE698A1ADAC9410083FADE /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
@@ -80,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724EAA231AEA3FB900961476 /* libMMMarkdown-iOS.a in Frameworks */,
 				7284E03F1ADC28B80005F140 /* Kingfisher.framework in Frameworks */,
 				72FE69881ADAC0BB0083FADE /* Alamofire.framework in Frameworks */,
 				7284E03A1ADBE4C30005F140 /* SwiftyJSON.framework in Frameworks */,
@@ -98,9 +143,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724EAA151AEA3FB100961476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				724EAA1C1AEA3FB100961476 /* libMMMarkdown-Mac.a */,
+				724EAA1E1AEA3FB100961476 /* libMMMarkdown-iOS.a */,
+				724EAA201AEA3FB100961476 /* MMMarkdownTests.xctest */,
+				724EAA221AEA3FB100961476 /* mmmarkdown */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		72B104581ADABDF9008ACEEC = {
 			isa = PBXGroup;
 			children = (
+				724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */,
 				7284E03D1ADC28510005F140 /* Kingfisher.framework */,
 				7284E0391ADBE4C30005F140 /* SwiftyJSON.framework */,
 				72FE69871ADAC0BB0083FADE /* Alamofire.framework */,
@@ -122,12 +179,11 @@
 		72B104631ADABDF9008ACEEC /* MyV2ex */ = {
 			isa = PBXGroup;
 			children = (
+				72D5DC521AEF779800F141BC /* cells */,
 				72C627701ADB8E390032A9FC /* viewControllers */,
 				72B104661ADABDF9008ACEEC /* AppDelegate.swift */,
 				72C627771ADB920C0032A9FC /* Model */,
 				72FE698D1ADAC9490083FADE /* vendor */,
-				72B104681ADABDF9008ACEEC /* TopicViewController.swift */,
-				72B1046A1ADABDF9008ACEEC /* Main.storyboard */,
 				72B1046D1ADABDF9008ACEEC /* Images.xcassets */,
 				72B1046F1ADABDF9008ACEEC /* LaunchScreen.xib */,
 				72B104641ADABDF9008ACEEC /* Supporting Files */,
@@ -164,8 +220,8 @@
 		72C627701ADB8E390032A9FC /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				72C627711ADB8E5D0032A9FC /* TopicCell.xib */,
-				72C627731ADB90860032A9FC /* TopicCell.swift */,
+				72B104681ADABDF9008ACEEC /* TopicViewController.swift */,
+				72D20F0B1AE79A3F009E2060 /* TopicContentViewController.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -173,9 +229,25 @@
 		72C627771ADB920C0032A9FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72B1046A1ADABDF9008ACEEC /* Main.storyboard */,
 				72C627751ADB91FF0032A9FC /* APIClient.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		72D5DC521AEF779800F141BC /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				72C627711ADB8E5D0032A9FC /* TopicCell.xib */,
+				72C627731ADB90860032A9FC /* TopicCell.swift */,
+				72D5DC4C1AEF6B4B00F141BC /* TopicBodyCell.xib */,
+				72D5DC4E1AEF6B9100F141BC /* TopicBodyCell.swift */,
+				72D5DC531AEF77DB00F141BC /* TopicTitleCell.swift */,
+				72D5DC551AEF77EB00F141BC /* TopicTitleCell.xib */,
+				726145801AEA3B4800D693E3 /* ReplyCell.xib */,
+				726145821AEA3B5B00D693E3 /* ReplyCell.swift */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 		72FE698D1ADAC9490083FADE /* vendor */ = {
@@ -255,6 +327,12 @@
 			mainGroup = 72B104581ADABDF9008ACEEC;
 			productRefGroup = 72B104621ADABDF9008ACEEC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 724EAA151AEA3FB100961476 /* Products */;
+					ProjectRef = 724EAA141AEA3FB100961476 /* MMMarkdown.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				72B104601ADABDF9008ACEEC /* MyV2ex */,
@@ -263,13 +341,47 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		724EAA1C1AEA3FB100961476 /* libMMMarkdown-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMMMarkdown-Mac.a";
+			remoteRef = 724EAA1B1AEA3FB100961476 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		724EAA1E1AEA3FB100961476 /* libMMMarkdown-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMMMarkdown-iOS.a";
+			remoteRef = 724EAA1D1AEA3FB100961476 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		724EAA201AEA3FB100961476 /* MMMarkdownTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MMMarkdownTests.xctest;
+			remoteRef = 724EAA1F1AEA3FB100961476 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		724EAA221AEA3FB100961476 /* mmmarkdown */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mmmarkdown;
+			remoteRef = 724EAA211AEA3FB100961476 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		72B1045F1ADABDF9008ACEEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D5DC561AEF77EB00F141BC /* TopicTitleCell.xib in Resources */,
 				72B1046C1ADABDF9008ACEEC /* Main.storyboard in Resources */,
+				72D5DC4D1AEF6B4B00F141BC /* TopicBodyCell.xib in Resources */,
 				72C627721ADB8E5D0032A9FC /* TopicCell.xib in Resources */,
+				726145811AEA3B4800D693E3 /* ReplyCell.xib in Resources */,
 				72B104711ADABDF9008ACEEC /* LaunchScreen.xib in Resources */,
 				72B1046E1ADABDF9008ACEEC /* Images.xcassets in Resources */,
 			);
@@ -291,8 +403,12 @@
 			files = (
 				72FE698C1ADAC9410083FADE /* HMSegmentedControl.m in Sources */,
 				72B104691ADABDF9008ACEEC /* TopicViewController.swift in Sources */,
+				72D20F0C1AE79A3F009E2060 /* TopicContentViewController.swift in Sources */,
+				72D5DC4F1AEF6B9100F141BC /* TopicBodyCell.swift in Sources */,
 				72B104671ADABDF9008ACEEC /* AppDelegate.swift in Sources */,
 				72C627741ADB90860032A9FC /* TopicCell.swift in Sources */,
+				726145831AEA3B5B00D693E3 /* ReplyCell.swift in Sources */,
+				72D5DC541AEF77DB00F141BC /* TopicTitleCell.swift in Sources */,
 				72C627761ADB91FF0032A9FC /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +541,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/MMMarkdown-iOS/public/",
+				);
 				INFOPLIST_FILE = MyV2ex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +562,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/MMMarkdown-iOS/public/",
 				);
 				INFOPLIST_FILE = MyV2ex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

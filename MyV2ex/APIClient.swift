@@ -30,7 +30,6 @@ class APIClient {
             failure(err)
           } else {
             let json = JSON(data: data! as! NSData , options: .AllowFragments, error: nil)
-            println("\(json)")
             success(json)
   
           }
